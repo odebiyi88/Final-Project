@@ -1,3 +1,73 @@
 .navbar-nav{
     text-align: right;
 }
+
+#showcase {
+    margin-top: 5%;
+    margin-bottom: 15%;
+    
+  }  
+
+.furniture {
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2% 5%;
+    margin: 5% auto;
+    border-radius: 5px;
+  }
+
+  .image {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32%;
+    min-width: 100px;
+    margin: 0 auto;
+  }
+  .details {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    margin: -1% auto;
+    padding: 2%;
+  }
+
+  .description, .price {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  .description {
+    height: 100%;
+    font-size: 13px;
+    overflow: auto;
+  }
+  
+  .price {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  body {
+    font-family: Helvetica, sans-serif;
+      background: url("https://image.freepik.com/free-vector/watercolor-boho-background_52683-67666.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  footer {
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    position: static;
+  }
+  
+  header {
+    padding-top: 3%;
+    min-height: 70px;
+  }
+  
+  .container {
+  width: 90%;
+  margin: 0 auto;
+  }
