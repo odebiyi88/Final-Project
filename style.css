@@ -49,9 +49,9 @@
     font-weight: bold;
   }
 
-  body {
+   body {
     font-family: Helvetica, sans-serif;
-      background: url("https://image.freepik.com/free-vector/watercolor-boho-background_52683-67666.jpg") no-repeat center center fixed;
+      background: url('images/pexels-mitchell-luo-3694711.jpg') no-repeat center center fixed;
     background-size: cover;
   }
 
