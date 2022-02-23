@@ -120,3 +120,56 @@ p {
     min-width: 100%;
     min-height: 100%;
   }
+
+  /* About Us */
+
+  .aboutUs {
+    margin: 3% 5%;
+}
+
+.project-description {
+    padding-bottom: 3px;
+}
+
+.profiles {
+    margin: 4% 20% 6% 3%;
+}
+
+.profile-description {
+    padding-left: 50px;
+    /* border: thin solid lightgray; */
+}
+
+.profile-description-left {
+    text-align: right;
+}
+
+.profile-picture {
+    width: 90px;
+    height: 90px;
+    /* text-align: center; */
+}
+
+.profile-images {
+    text-align: center;
+}
+.profile-picture {
+    border-radius: 50%;
+}
+
+.profile-row-left {
+    margin-bottom: 15%;
+}
+
+.profile-row-right {
+    margin-top: 15%;
+}
+
+@media only screen and (max-width: 991px) {
+    .profile-description-left {
+        text-align: left;
+    }
+    .profile-description {
+        margin-top: 5px;
+    }
+}
