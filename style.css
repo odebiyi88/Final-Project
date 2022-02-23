@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&display=swap');
+
+.home-h1 {
+    margin-top: 75px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    
+}
+
+h3 {
+    font-family: 'Bodoni Moda', serif;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.col-7 /*fix later*/ {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.col-5 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.navbar-brand {
+    font-family: 'Bodoni Moda', serif;
+    letter-spacing: 7px;
+    padding-left: 30px;
+    font-size: 35px;
+
+}
+
 .navbar-nav{
     text-align: right;
 }
