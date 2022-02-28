@@ -14,11 +14,22 @@ h3, h6 {
 html, 
   body {
       height: 100%;
-      background: linear-gradient(90deg, #c5cece 45%, #ebeae8 5%);
+      background: linear-gradient(90deg, #c5cece 47%, #ebeae8 47%);
   }
 
 h1, p, .nav-link {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+hr {
+   display: block;
+   /* margin-before: 0.5em;
+   margin-after: 0.5em;
+   margin-start: auto;
+   margin-end: auto; */
+   overflow: hidden;
+   border-style: inset;
+  border-width: 5px;
+  margin: 0.5em 0.5em auto auto;
 }
 
 .col-7 /*fix later*/ {
@@ -111,10 +122,10 @@ h1, p, .nav-link {
     position: static;
   }
   
-  header {
-    padding-top: 0;
-    min-height: 70px;
-  }
+  .c-header {
+    padding-left: 16px;
+    padding-right: 16px;
+}
   
   .container {
   width: 100%;
@@ -128,27 +139,22 @@ h1, p, .nav-link {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.carousel-inner > .item > img {
-  width: 540px;
-  height: 440px;
-}
+#carouselExampleControls img {
 
-  /*.carousel .img {
-    float: left;
-    width:  100px;
-    height: 100px;
-    object-fit: cover;
-  }*/
+  width: auto;
+  height: 425px;
+  max-height: 425px;
+  }
 
 .d-block{
   width: auto;
   height: 700;
   max-height: 1000px;
 }
-.card-img-top {
+/* .card-img-top {
   width: auto;
   max-height: 350px;
-}
+} */
 
 
   /* About Us */
@@ -166,10 +172,19 @@ h1, p, .nav-link {
 }
 
 .profile-description {
-    padding-left: 200px;
-    /* border: thin solid lightgray; */
+    padding-left: 210px;
+    border: thin solid lightgray;
 }
-
+.profile-description:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  color: rgba(41, 9, 9, 0.75);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.2s ease-in-out;
+  border-radius:6px;
+  
+}
 .profile-description-left {
     text-align: right;
 }
@@ -201,6 +216,7 @@ h1, p, .nav-link {
   color: rgba(63, 62, 55, 0.5);
 }
 
+
 @media only screen and (max-width: 991px) {
     .profile-description-left {
         text-align: left;
@@ -209,9 +225,6 @@ h1, p, .nav-link {
         margin-top: 5px;
     }
 }
-
-
-/* login */
 
 
 /* sign in FORM */
@@ -335,5 +348,28 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 .bi {
   vertical-align: -.125em;
   fill: currentColor;
+}
+/* cards*/
+
+.card {
+  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 5px;
+  padding: 4px 4px;
+  text-decoration: none;
+  width:100%;
+  transition: all 0.2s ease-in-out;
+  border-radius:6px;
+}
+.card:hover {
+  background-color: #f3f2a5;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  color: rgb(58, 11, 11);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
