@@ -7,11 +7,17 @@
     
 }
 
-h3 {
+
+h3, h6 {
     font-family: 'Bodoni Moda', serif;
 }
+html, 
+  body {
+      height: 100%;
+      background: linear-gradient(90deg, #c5cece 45%, #ebeae8 5%);
+  }
 
-p {
+h1, p, .nav-link {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -106,17 +112,33 @@ p {
   }
   
   header {
-    padding-top: 3%;
+    padding-top: 0;
     min-height: 70px;
   }
   
   .container {
   width: 100%;
   margin: 0 auto;
-  background-color: rgb(219, 186, 186) ;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /*background-color: #ccaf9b ;*/
+  /*box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;*/
   
 }
+
+.carousel {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.carousel-inner > .item > img {
+  width: 540px;
+  height: 440px;
+}
+
+  /*.carousel .img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+  }*/
 
 .d-block{
   width: auto;
