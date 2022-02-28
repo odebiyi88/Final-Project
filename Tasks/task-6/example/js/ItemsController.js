@@ -1,6 +1,6 @@
 // Create a ItemsController class
 class ItemsController {
-    // Set up the items and currentId property in the contructor
+    // Set up the items and currentId property in the constructor
     constructor(currentId = 0) {
         this.items = [];
         this.currentId = currentId;
