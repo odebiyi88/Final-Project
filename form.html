@@ -12,39 +12,37 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1> </h1>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">SUNSA</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-nowrap">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="products.html">Products</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="form.html">Form</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="signin.html">signin</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header> 
-
-
-
+  <header>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <div class="container-fluid">
+         <a class="navbar-brand" href="index.html"> SUNSA</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         </button>
+         <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-nowrap">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="aboutus.html">About Us</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="products.html">Products</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="form.html">Form</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="signin.html">Sign-In</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+</header>
 
     <div class="container">
       <h1 class="my-5">New Item</h1>
@@ -66,8 +64,30 @@
           </div>
       </div>
   </div>
-
-
+<!-- This is a footer -->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <span class="text-muted">&copy; 2021 Company, Inc</span>
+      </div>
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+    <li class="nav-item"><a href="products.html" class="nav-link px-2 text-muted">Products</a></li>
+    <li class="nav-item"><a href="aboutus.html" class="nav-link px-2 text-muted">About us</a></li>
+    <li class="nav-item"><a href="signin.html" class="nav-link px-2 text-muted">Sign-In</a></li>
+    <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact us</a></li>
+  </ul>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </footer>
+  </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -82,76 +102,6 @@
 
     <script src="js/itemsController.js"></script>
     <script src="js/items.js"></script>
-
-
-    <!-- <div class='container'>
-      <h1>Privilege to custom orders</h1>
-      <form>
-       <div class='row'>
-        <div class='col-1'></div>
-        <div class='col-6'>
-        <label for='fname'>First name</label><br>
-        <input type='text' id='fname' name='fname'><br><br>
-       </div>
-       <div class="col-5">
-        <label for='lname' >Last name</label><br>
-        <input type='text' id='lname' name='lname'><br><br>
-       </div>
-       </div>
-       <div class='row'>
-        <div class='col-1'></div>
-        <div class='col-6'>  
-        <label for='email'>E-mail:</label><br>
-        <input type='email' id='email' name='email'><br><br>
-        </div>
-        <div class='col-5'>
-        <label for='phno'>📞Ph No:</label><br>
-        <input type='number' id='phno' name='phno'><br><br>
-        </div>
-       </div>
-       <div class='row'>
-        <div class='col-1'></div>
-        <div class='col-6'>  
-        <label for='address'>Address</label><br>
-        <input type='text' id='address' name='address'><br><br>
-        </div>
-        <div class='col-5'>
-        <label for='card'>Credit card number</label><br>
-        <input type='number' id='card' name='card'><br><br>
-        </div>
-        </div>
-        <div class='row'>
-        <div class='col-1'></div>
-        <div class='col'> 
-        <label for='ino'>Item Number</label><br>
-        <input type='number' id='ino' name='ino'><br><br>
-        </div>
-        <div class='col'>
-        <label for='color'>Color</label><br>
-        <input type='text' id='color' name='color'><br><br>
-        </div>
-        <div class='col'>
-        <label for='size'>Size</label><br>
-        <input type='number' id='size' name='size'><br><br><br>
-        </div>
-        </div>
-        <div class='row'>
-        <div class='col-3'></div>
-        <div class='col-8'>
-        <label for='tarea'>Description</label><br>
-        <textarea rows='7' cols='50' id='tarea' name='tarea'></textarea><br><br>
-        </div>
-        </div>
-        <div class='row'>
-            <div class='col-4'></div>
-            <div class='col-2'>
-                <button type='button'>Place Order</button>
-            </div>
-        </div>
-        </div>
-        
-      </form>
-    </div>  -->
 
     
 </body>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+   
+    
+    <h1><center>Product Form</center></h1>
+	<hr>
+			<div class="product-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>product*</label><label class="validation-error hide" id="productValidationError">This field is required.</label>
+                        <input type="text" name="product" id="product" required>
+                    </div>
+                    <div>
+                        <label>description</label>
+                        <input type="text" name="description" id="description" required>
+                    </div>
+                    <div>
+                        <label>price</label>
+                        <input type="text" name="price" id="price" required>
+                    </div>
+                    <div>
+                        <label>img</label>
+                        <input type="text" name="img" id="img" required>
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "product-table">
+                <table class="list" id="productList">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>description</th>
+                            <th>price</th>
+                            <th>img</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+
+        <!-- We have assigned a unique id to product, description, price,
+        and img input elements in HTML form:
+        <input type="text" name="product" id="product">
+        <input type="text" name="description" id="description">
+        <input type="text" name="price" id="price">
+        <input type="text" name="img" id="img"> -->
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

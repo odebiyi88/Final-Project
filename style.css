@@ -7,12 +7,29 @@
     
 }
 
-h3 {
+
+h3, h6 {
     font-family: 'Bodoni Moda', serif;
 }
+html, 
+  body {
+      height: 100%;
+      background: linear-gradient(90deg, #c5cece 47%, #ebeae8 47%);
+  }
 
-p {
+h1, p, .nav-link {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+hr {
+   display: block;
+   /* margin-before: 0.5em;
+   margin-after: 0.5em;
+   margin-start: auto;
+   margin-end: auto; */
+   overflow: hidden;
+   border-style: inset;
+  border-width: 5px;
+  margin: 0.5em 0.5em auto auto;
 }
 
 .col-7 /*fix later*/ {
@@ -105,28 +122,39 @@ p {
     position: static;
   }
   
-  header {
-    padding-top: 3%;
-    min-height: 70px;
-  }
+  .c-header {
+    padding-left: 16px;
+    padding-right: 16px;
+}
   
   .container {
   width: 100%;
   margin: 0 auto;
-  background-color: rgb(219, 186, 186) ;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /*background-color: #ccaf9b ;*/
+  /*box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;*/
   
 }
+
+.carousel {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#carouselExampleControls img {
+
+  width: auto;
+  height: 425px;
+  max-height: 425px;
+  }
 
 .d-block{
   width: auto;
   height: 700;
   max-height: 1000px;
 }
-.card-img-top {
+/* .card-img-top {
   width: auto;
   max-height: 350px;
-}
+} */
 
 
   /* About Us */
@@ -144,10 +172,19 @@ p {
 }
 
 .profile-description {
-    padding-left: 200px;
-    /* border: thin solid lightgray; */
+    padding-left: 210px;
+    border: thin solid lightgray;
 }
-
+.profile-description:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  color: rgba(41, 9, 9, 0.75);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.2s ease-in-out;
+  border-radius:6px;
+  
+}
 .profile-description-left {
     text-align: right;
 }
@@ -179,6 +216,7 @@ p {
   color: rgba(63, 62, 55, 0.5);
 }
 
+
 @media only screen and (max-width: 991px) {
     .profile-description-left {
         text-align: left;
@@ -187,9 +225,6 @@ p {
         margin-top: 5px;
     }
 }
-
-
-/* login */
 
 
 /* sign in FORM */
@@ -301,6 +336,47 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   
 }
 
-/* card */
+/* footer */
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
 
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+/* cards*/
 
+.card {
+  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 5px;
+  padding: 4px 4px;
+  text-decoration: none;
+  width:100%;
+  transition: all 0.2s ease-in-out;
+  border-radius:6px;
+}
+.card:hover {
+  background-color: #f3f2a5;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  color: rgb(58, 11, 11);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Contact us */
+#contact-form{
+  margin-left: 25px;
+}
+.address{
+  margin-left: 25px;
+}
