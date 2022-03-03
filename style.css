@@ -24,10 +24,6 @@ h1, p, .nav-link {
 }
 hr {
    display: block;
-   /* margin-before: 0.5em;
-   margin-after: 0.5em;
-   margin-start: auto;
-   margin-end: auto; */
    overflow: hidden;
    border-style: inset;
   border-width: 5px;
@@ -78,15 +74,6 @@ footer a:hover{
     margin-bottom: 15%;
     
   }  
-
-.furniture {
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 2% 5%;
-    margin: 5% auto;
-    border-radius: 5px;
-  }
 
   .image {
     display: inline-block;
@@ -401,15 +388,16 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   display: inline-block;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
+  gap: 5px;
+  margin-left: 5px;
+  margin-right: 15px;
   margin-bottom: 5px;
-  padding: 4px 4px;
+  padding: 10px 10px;
   text-decoration: none;
-  width:100%;
+  max-width: 360px;
   transition: all 0.2s ease-in-out;
   border-radius:6px;
+  border-color: rgba(0, 0, 0, 0.2);
 }
 .card:hover {
   background-color: #f3f2a5;
@@ -417,6 +405,10 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   color: rgb(58, 11, 11);
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-horizontal {
+  /* display: flex; */
+  flex: 1 1 auto;
 }
 
 /* Contact us */
