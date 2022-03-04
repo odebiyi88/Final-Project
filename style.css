@@ -4,7 +4,7 @@
 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 5rem;
-
+    text-align: left;
     margin-top: 25px;
 }
 
@@ -26,10 +26,16 @@ body
 }
 
 h1,
+h2,
+label,
 p,
 .nav-link
 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
 }
 hr
 {
@@ -64,7 +70,7 @@ hr
 {
     font-family: 'Bodoni Moda', serif;
     font-size: 28px;
-
+    padding-left: 15px;
     letter-spacing: 5px;
 }
 
@@ -157,6 +163,9 @@ footer
     margin-left: auto;
 
     box-shadow: rgba(0, 0, 0, .3) 0 19px 38px, rgba(0, 0, 0, .22) 0 15px 12px;
+    padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
 }
 
 /*Carousel good*/
