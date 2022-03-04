@@ -48,6 +48,12 @@ hr {
     width: 50%;
 }
 
+.navbar-brand {
+  font-family: 'Bodoni Moda', serif;
+  letter-spacing: 5px;
+  font-size: 28px;
+}
+
 
   .navbar a:hover {
     background-color: #ddd;
@@ -120,12 +126,13 @@ footer a:hover{
   
   .container {
   width: auto;
+  /* width: 100%; */
   margin: 0;
   margin-right: auto;
   margin-left: auto;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   
-}
+} 
 
 
 
@@ -162,17 +169,19 @@ footer a:hover{
 }
 
 .profile-description {
-    padding-left: 210px;
-    border: thin solid rgba(211, 211, 211,0);
+    padding-left: 200px;
+    padding-right: 0px;
+    border: thin solid rgba(211, 211, 211,1);
+    
 }
 .profile-description:hover{
-  background-color: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
-  color: rgba(41, 9, 9, 0.75);
-  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all 0.2s ease-in-out;
-  border-radius:6px; 
+  /* background-color: rgba(255, 255, 255, 0.4); */
+  /* box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);  */
+  /* color: rgba(41, 9, 9, 0.75); */
+  /* -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  /* -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  /* transition: all 0.2s ease-in-out; */
+  /* border-radius:6px;  */
 }
 
 .profile-description-left {
