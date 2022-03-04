@@ -66,6 +66,11 @@ hr
     margin-left: auto;
 }
 
+.home-btn{
+    background-color: #65748e;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .navbar-brand
 {
     font-family: 'Bodoni Moda', serif;
